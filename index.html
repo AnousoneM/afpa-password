@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de Passe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .validate {
+            color: green;
+        }
+
+        .danger {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Modification du mot de passe</h1>
+
+    <!-- Bien penser à mettre des id sur les éléments sur lesquels nous souhaitons intéragir -->
+    <div>
+        <label for="input-password">Nouveau Mdp</label>
+        <input id="input-password" type="password">
+        <button id="btn-password"><i class="bi bi-eye-slash-fill"></i></button>
+    </div>
+    <div>
+        <label for="input-confirmPassword">Confirmation Mdp</label>
+        <input id="input-confirmPassword" type="password">
+        <button id="btn-confirmPassword"><i class="bi bi-eye-slash-fill"></i></button>
+    </div>
+    <ul>
+        <li id="spanMin">Contient une minuscule et une majuscule</li>
+        <li id="spanCar">Contient un caractère spécial</li>
+        <li id="spanNum">Contient un chiffre</li>
+        <li id="spanTot">Contient au moins 8 caractères</li>
+    </ul>
+    <div id="strength"></div>
+    <div>
+        <p id="information"></p>
+        <button id="btn-change-password">Changement du Mdp</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
